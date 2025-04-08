@@ -1,0 +1,28 @@
+// EVENT HANDLING
+
+EVENT HANDLING CAN BE DEFINED AS THE ACTIVITY  TAKES PLACES BY CLICKING OR PRESSING THE KEYBORD..
+
+SOME IMPORTANT EVENT HANDLER ARE:
+1) FORM EVENT: onChange   onSubmit
+2)Mouse Event: onClick    onDoubleClick
+3)KeyBoard Events: onKeyDown   onKeyUp  onKeyPress
+4) Focus Events: onFocus   onBlur  
+
+NORMAL FUNCTION USING THE EVENT HANDLER
+ const Events=()=>{
+  const handleClick=()=>{
+   alert("you click the button");
+  };
+}
+
+To call this..
+   <button onClick={handleClick}> Click the Button</button>
+
+FUNCTION USING THE PARAMETER
+  const addtion=(a)=>{
+  alert(a+10);
+}
+
+// WHENEVER WE CALL THE PARAMETRIC FUNCTION IN EVENT JHANDLING THEN WE USE CALLBACK FUNCTION
+
+<button onClick={()=>addition(100)}> Button 2 </button>
