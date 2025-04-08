@@ -1,0 +1,19 @@
+import React from 'react
+const App=()=>{
+
+// Any variables is declared or loop is used or initialize outside the return..
+
+const name="Vishal";
+const age=20;
+// any function or object is decalered there and called by using the CURLY BRACKET..
+// More than one objects is called using the segments tag...
+return (
+ <div>
+<h1> Web Development</h1>
+
+// Never ever try to execute more than one variables inside the culry bracket because only last one will be executed..
+<h2>{name,age}</h2>   WRING WAY..
+
+// Note we use Segments  {<> </>}  to return more than one value at a time using the div tag.. 
+
+// Component ka 1ST Letter hmesha Capital hota hai.. 
