@@ -1,0 +1,25 @@
+import React from "react";
+ import {useEffect,useState} from "react";
+
+const   App=()=>{
+
+// Note: UseState me jo number dete hai oh uski refrence value hoti h...
+
+ const [counter,setCounter]=useState(0);
+
+useEffect(()=>{
+
+document.title=counter;
+console.log("UseEffect is Running");
+},[counter]);
+//Note: Agar yha pr counter ki value pass nhi krte to ye dependecy array array kevl ek baar hi chalta..
+
+return (
+<>
+<h1>{counter}</h1>
+<button onClick={()=>setCounter(counter+1)>Increase</button>
+<button onClick={()=>setCounter(counter-1)>Decrease</button>
+</>
+);
+};
+export default App;
