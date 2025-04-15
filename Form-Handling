@@ -1,0 +1,56 @@
+import React from 'react'
+
+const Form=()=>{
+// Note: Jo v data Aayenge unhe save/store krne k liye hame koi na koi variable
+chahiye...jiske liye hame USESTATE ka use krna padega...
+
+const [name,setName]=useState('')
+const [email,setEmail]=useState('')
+const [password,setPassword]=useState('')
+
+// Note: Form ko jb v submit krte hai page reload hota jo kireact kinproperty nhi hai..
+// issi property ko prevent krne k liye ham ek handleSUbmit naam ka function bnayenge
+// jo ki page ko reload se prevent kar sake...
+
+const handleSubmit=(e)=>{
+e.preventDafault();
+alert("Your form has been submitted"+name+" "+email+" "+password);
+
+// Note: Agr ek baar form me data input ho ja rha hai to use fir se reset kaise kare..
+
+setName('');
+setEmail('');
+setPassword('');
+
+};
+
+return (
+<div> 
+<form onSubmit={handleSubmit}>
+  <div>
+Name: <input value={name} 
+onChange={(e)=> setName(e.target.value)}
+type='text'
+/>
+
+</div>
+ <div>
+Email: <input value={email}
+onChange={(e)=> setEmail(e.target.value)}
+type='text
+type='email'/>
+</div>
+ <div>
+Password: <input value={password}
+onChange={(e)=> setPassword(e.target.value)}
+type='password'/>
+</div>
+<div> 
+<button>Submit</button>
+</div>
+</form>
+</div>
+);
+}
+export default Form;
+
