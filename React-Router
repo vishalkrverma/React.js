@@ -1,0 +1,20 @@
+# KOI PAGES BR BR RELOAD NA HO AUR DUSRE PAGE PE OPEN NA HO ISKE LIYE HAM 
+# ROUTING KA USE KARTE HAI...
+
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+const App=()=>{
+  return (
+   <>
+    <Router>
+    <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/" element={<About/>}/>
+    <Route path="/" element={<Team/>}/>
+    <Route path="/" element={<Product/>}/>
+    <Route path="/" element={<Contact/>}/>
+    </Routes>
+  </Router>
+    </>
+    );
+  };
+export default App;
