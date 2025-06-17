@@ -1,0 +1,130 @@
+React.js is a JavaScript Library used for building user interfaces (UIs) and single page applications.
+Created by Jordan Walke at facebook.
+It was first used in facebook in NEWS FEED section.
+React knows only one things that is user inteface..
+
+REACT IS ALL ABOUT THE COMPONENTS.
+It is used to make reduce the number of line of code and increases the code reusability.
+
+------------ WHY REACT.js ----------------------------------------------------------
+
+React is declarative beacuse it describes what the UI should look like rather than how tp achieve it.
+This makes the code easier to read and maintain, as it more focused on the end result rather than the steps involved in getting here.
+
+-----------------  Example of Declarative -----------------------------------------------
+
+function Mycomponent({name}){
+return <div>Hello, {name}!</div>;
+}
+
+----------------------  Example of Imperative ----------------------------------------
+function MyComponent({name}){
+const element= document.createElement('div'); // Create a new div element
+element.textContext='Hello, ${name}!';   // Set text context manually
+return element;      // Return the created element 
+}
+
+Here we manually creating elements,setting their property and appending them to the DOM.
+
+-----------------------
+Components-------> Instances-----------> React Elements ----------> DOM Elements--------->Final  UI
+
+--------------- PORT  5173 ------------------------------------
+
+BUN is an npm compatible package manager..
+bun is far more faster than the npm and so many more......
+====== >       bun create vite
+
+--------------- PROJECTS STRUCTURE ------------------------------------------------
+NODE MODULES:
+       THIS IS THE FOLDER WHICH CONTAINS ALL THE NECCESSARY LIBRARIES AND DEPENDENCIES BY REACT.JS.
+       YOU CAN IGNORE THIS FOLDER COMPLETELY.
+
+PUBLIC:
+       THIS FOLDER CONTAINS ALL STATIC FILES LIKES IMAGES,VIDEOS,FONT etc.
+SRC:
+    THIS FOLDER CONTAINS ALL SOURCE FILES (REACT COMPONENT,JAVASCRIPT FILES ,AND CSS).
+
+    APP.JSX:
+           THE MAIN REACT COMPONENT THAT ACTS AS HELPER COMPONENT.
+    MAIN.JSX:
+             THIS IS THE ENTRY POINT TO OUR REACT.JS 
+    .ESLINTRC.CJS:
+               THIS FILE INCLUDES CONGIGURATION FOR ESLint.
+               ESLint IS A STATIC CODE ANALYSIS TOOL FOR IDENTIFYING PROBLEMATIC PATTERNS FOUND IN JS CODE..
+
+    .GITIGNORE
+PACKAGE.JSON:
+            IT INCLUDES NAME,VERSION,DESCRIPTIONS,SCRIPTS DEPENDENCIES.
+
+In Dependecies we will React and React-dom:
+   React.js is just a library for creating dynamic user interfaces.
+   React DOM is used to render those components on our web page.
+   You might have heard about React Native for creating mobile applications which is also based on React.js.
+
+   -----------------  NAMING CONVENTIONS ----------------------------------------
+   CAMEL-CASES: CAPITALIZATION OF FIRST WORD EXCEPT THE FIRST IS DONE.
+   PASCAL-CASE: CAPITALIZATION OF EACH WORD IS DONE.
+   SNAKE-CASE:EACH WORD IS SEPERATED BT THE "_" AND IS IN SMALL LETTER.
+   KEBAB-CASE: EACH WORD IS SEPERATED BY THE HYPEN "-".
+
+   
+   COMPONENT IS REACT FUNCTION WHICH RETURN THE JS CODE..
+
+   ---------- JSX  --------------------------------------------------------------------
+   JSX stands for JavaScript XML. It allows you write HTML elements in JavaScript and place them in the DOM without any createElement() and appendChild() methods.
+
+   While a React.element is a building block and a part of the virtual dom.it is not the virtual DOM istself.
+   Rather, it is an object within the virtua; DOM tree that describes what should be rendered on the screen. 
+
+   BABEL is a javascript compiler.
+   
+   Each JSX expression must have one parent element,which means if you try to return multiple elements,
+   React will throw an error.
+   Every JSX tag needs to be closed.You can use self-closing tags for the elements that don't have children.
+   These are also known as the Void Elements.
+
+   ----------------------  OUR FIRST REACT.JS COMPONENT ------------------------------------------------------------
+
+  In React,a component is essentially a JavaScript function or class that returns JSX(JavaScript XML),a syntax extension that allows you to write HTML-like code inside JavaScript.
+  Components are the Building Blocks of any React application,allowing fir the creation of coplex and interactive user 
+  interfaces through the assembly of isolated,reusable pieces.
+
+  THERE ARE TWO WAYS TO CREATE COMPONENTS IN REACT.JS
+  CLASS BASED COMPONENTS:
+              This is how components were created before functional components.
+   FUNCTIONAL COMPONENT:
+              This is the modern and recommended ways of writing React.js components.
+              Generally we use the functional components which are easy to implement and understandable.
+
+
+-----------------------------  REACT FRAGMENTS --------------------------------------------
+In React.js , a component can't return multiple elements without a wrapper div.
+You can do this to imitate it. Using an array of elements with keys.
+It allows  components to return multiple elements without adding extra node to the dom.
+
+PROBLEMS:
+       WHY CAN'T WE RETURN MULTIPLE ELEMENT AT THE SAME TIME ?
+       As after JSX is compiled it is converted to normal JavaScript object,you can't return multiple JavaScript object at the same time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
